@@ -6,44 +6,162 @@
       body{
           background-color: #61249d;
       }
-      div{
-          background-color: darkgray;
-          border: 15px solid black;
-          width: 500px;
-          margin: 50px;
-      }
       img{
           border: 2px solid;
           display: block;
-          margin: 50px;
-      }
-      h1{
-          margin-left: auto;
-          color: white;
-          text-shadow: 4px 4px black;
+          margin: auto;
       }
 
       p{
           color: white;
       }
+      .item1{ grid-area: header; }
+      .item2{ grid-area: ing; }
+      .item3{ grid-area: dir; }
+
+      .item4{ grid-area: fir; }
+      .item5{ grid-area: sec; }
+      .item6{ grid-area: thr; }
+
+      .grid-container{
+          display: grid;
+          grid-template-areas: 
+          'header header'
+          'ing dir';
+          grid-gap: 5px;
+          background-color: black;
+          padding: 7px;
+          grid-template-columns: 1fr 300px;
+          grid-template-rows: 1fr 700px;
+      }
+      .grid-container > div {
+         background-color: darkgray;
+         text-align: left;
+         padding: 5px 0;
+         font-size: 20px;
+      }
+      .grid-container2{
+          display: grid;
+          grid-template-areas: 
+          'fir fir sec sec thr thr'
+          'fir fir sec sec thr thr'
+          'fir fir sec sec thr thr'
+          'fir fir sec sec thr thr';
+      }
+    
 
     </style>
 </head>
+<body></body>
+    <div class="grid-container2">
+        <div class="item4"> <div class="grid-container">
+            <div class="item1"><h1>Tacos Al Pastor</h1>
+                <img src="https://thestayathomechef.com/wp-content/uploads/2019/07/Tacos-al-Pastor-4-1.jpg" 
+                alt="Tacos" width="400" height="500"></div>
+    
+        <div class="item2">      
+            <h2>Ingredients</h2>
+            <ul>
+                <li>5 lb boneless pork shoulder</li>
+                <li>3 tablespoons achiote paste</li>
+                <li>2 tablespoons guajillo chili powder</li>
+                <li>1 tablespoon garlic powder</li>
+                <li>1 tablespoon dried oregano</li>
+                <li>1 tablespoon cumin</li>
+                <li>1 tablespoon salt</li>
+                <li>1 tablespoon pepper</li>
+                <li>3/4 cup white vinegar</li>
+                <li>1 cup pineapple juice</li>
+                <li>1 pineapple, skinned and sliced into 1-inch (2 cm) rounds</li>
+                <li>1 wooden skweer to fit oven</li>
+            </ul>
+            </div>
 
-<body>
-    <h1>Air-Fried Chicken Sandwhich</h1>
-        <img src="https://www.staysnatched.com/wp-content/uploads/2020/04/Air-Fryer-Copycat-Chick-fil-A-Chicken-1-932x1024.jpg.webp" 
-            alt="Chicken Sandwich" width="530" height="500">
-    <div>
+        <div class="item3">
+            <h2>Directions</h2>
+            <ol>
+                <li>Slice the pork shoulder into about 1-centimeter slices and combine with dry
+                     and wet ingredients in bowl. Leave in fridge for 2 hours.</li>
+                <li>Preheat the oven to 350°F. Line baking sheet with parchment paper or aluminum foil.</li>
+                <li>Take wooden skweer and push in middle of two pineapple slices.</li>
+                <li>Take pork slices out of fridge and start stacking on top of each other on the skweer.</li>
+                <li>Bake for 1 1/2 hours until pork is slightly charred outside and deep red.
+                     Rest meat for 10 minutes.</li>
+                <li>Carve off thin slices of pork and roasted pineapple and assemble with cooked tortillas.</li>
+            </ol>
+        </div>
+
+    </div>
+        </div>
+
+    <div class="item5"> <div class="grid-container">
+        <div class="item1"><h1>Air-Fried Chicken Sandwhich</h1>
+            <img src="https://www.staysnatched.com/wp-content/uploads/2020/04/Air-Fryer-Copycat-Chick-fil-A-Chicken-1-932x1024.jpg.webp" 
+            alt="Chicken Sandwich" width="400" height="500"></div>
+
+    <div class="item2">      
         <h2>Ingredients</h2>
         <ul>
             <li>2 Boneless, Skinless Chicken Breasts</li>
             <li>1 cup pickle juice</li>
+            <li>1/2 cup of buttermilk</li>
+            <li>1/2 cup flour</li>
+            <li>1/2 teaspoon garlic powder</li>
+            <li>1/2 teaspoon paprika</li>
+            <li>1 teaspoon salt</li>
+            <li>1/4 teaspoon pepper</li>
+            <li>1 tablespoon sugar</li>
+            <li>cooking oil</li>
         </ul>
+        </div>
+
+    <div class="item3">
+        <h2>Directions</h2>
+        <ol>
+            <li>Place thawed out chicken breasts in a large bowl with pickle juice and buttermilk.
+                 Refrigerate for 30 minutes.</li>
+            <li>Combine flower and spices in a large bowl.</li>
+            <li>Spray air fryer basket with cooking oil.</li>
+            <li>Remove chicken from marinade and dredge in flour mix.</li>
+            <li>Spray top with cooking oil and Air Fry for 15 minutes.</li>
+            <li>Open air fryer and flip chicken cooking for an additional 5 minutes until the chicken is crisp.</li>
+            <li>Remove chicken, assemble sandwhich, and enjoy.</li>
+        </ol>
     </div>
 
+    </div>
+    </div>
+    
+    <div class="item6"> <div class="grid-container">
+        <div class="item1"><h1>Revotillio de Huevos</h1>
+            <img src="https://www.dominicancooking.com/wp-content/uploads/recipe-dominican-eggs-revoltillo-huevos-CG15466-600x900.jpg.webp" 
+            alt="Chicken Sandwich" width="400" height="500"></div>
 
-</body>
+    <div class="item2">      
+        <h2>Ingredients</h2>
+        <ul>
+            <li>2 tablespoons olive oil</li>
+            <li>3/4 cup diced tomatoes</li>
+            <li>1 bell pepper</li>
+            <li>1 large onion</li>
+            <li>8 eggs</li>
+            <li>1 teaspoon salt</li>
+            <li>1/2 teaspoon pepper</li>
+            <li>1 tablespoon of minced parsley</li>
+        </ul>
+        </div>
+    <div class="item3">
+        <h2>Directions</h2>
+        <ol>
+            <li>Heat a tablespoon of oil in a large skillet over medium heat.
+                Add tomato, bell pepper, onion, and cook and stir until the vegetables are cooked through.</li>
+            <li>Add the eggs, stir until the eggs set. Season with salt and pepper to taste.
+                 Garnish with parsley.</li>
+            <li>Serve and enjoy.</li>
+        </ol>
+    </div>
 
-
+    </div>
+    </div>
+    </div>
 </html>
